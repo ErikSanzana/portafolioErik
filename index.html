@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
+    <title>Erik Sanzana Portafolio</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/assets/css/style.css" rel="stylesheet"/>
  
 
@@ -49,7 +52,9 @@
         </div>
       </nav>
       <div class="mb-5 pb-5">
-        <button id="cambiar-color">Cambiar color</button>
+        <button id="cambiar-color" class="btn btn-lg btn-secondary">
+          <i class="fas fa-paint-brush"></i> Cambiar color
+        </button>
         <a href="https://github.com/ErikSanzana" target="_blank" class="btn btn-lg btn-info text-light">Trabajos</a>
         <a href="https://wa.link/7cpr1h" target="_blank" class="btn btn-lg btn-info text-light">Contacto</a>
       </div>
@@ -180,10 +185,10 @@
     <!--bootstrap 4.6.4-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script>
-        document.getElementById("cambiar-color").addEventListener("click", function() {
-          var color = Math.floor(Math.random() * 16777216).toString(16);
-          document.querySelector("body").style.backgroundColor = "#" + color;
-        });
-      </script>
+      document.getElementById("cambiar-color").addEventListener("click", function() {
+        var color = Math.floor(Math.random() * 16777216).toString(16);
+        document.querySelector("body").style.backgroundColor = "#" + color;
+      });
+    </script>    
   </body>
 </html>
